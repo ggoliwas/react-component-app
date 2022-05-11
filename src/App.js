@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import RateForm from "./components/RateForm";
+import ResultForm from "./components/ResultForm";
 
 function App() {
+
+  const [isClicked, setClicked] = useState(false);
+  const [rating, setRating] = useState(0); 
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        {isClicked ? (
+          <ResultForm rating={rating} />
+        ) : (
+          <RateForm setClicked={setClicked} rating={rating} setRating={setRating} />
+        )}
+      </div>
     </div>
   );
 }

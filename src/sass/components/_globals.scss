@@ -1,0 +1,102 @@
+@use '../utilities/' as *;
+
+body, html {
+    font-family: 'Overpass', sans-serif;
+    background-color: $veryDarkBlue;
+  
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container { 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardForm {
+    width: 375px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: $darkBlue;
+    background: linear-gradient(180deg, rgba(35,42,52,1) 0%, rgba(23,30,40,1) 100%);
+
+    &__title {
+        color: $white;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        color: $mediumGrey;
+        font-size: 13px;
+    }
+
+    &__info { 
+        display: inline-block;
+        font-size: 14px;
+        color: $orange;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        background-color: $darkBlue;
+        padding: 6px 10px;
+    }
+
+
+}
+
+.rating {
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 0;
+    }
+    &__item {
+        width: 50px;
+        padding: 12px 0;
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        color: $mediumGrey;
+        background-color: $darkBlue;
+        border-radius:50%;
+
+        &:hover {
+            color: $white;
+            background-color: $orange;
+
+        }
+
+        &--active {
+            color: $white;
+            background-color: $mediumGrey;
+        }
+    }
+
+}
+
+.button {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    
+    &--submit {
+        width: 100%;
+        color: $white;
+        padding: 8px;
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-weight: 400;
+        border-radius: 20px;
+        background-color: $orange;
+
+        &:hover {
+            color: $orange;
+            background-color: $white;
+        }
+    }
+}
+

@@ -1,0 +1,142 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  border: 0;
+  outline: 0;
+  font: inherit;
+}
+
+body, html {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardForm {
+  width: 375px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: hsl(213deg, 19%, 18%);
+  background: linear-gradient(180deg, rgb(35, 42, 52) 0%, rgb(23, 30, 40) 100%);
+}
+.cardForm__title {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 10px;
+}
+.cardForm__desc {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 13px;
+}
+.cardForm__info {
+  display: inline-block;
+  font-size: 14px;
+  color: hsl(25deg, 97%, 53%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 6px 10px;
+}
+
+.rating__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+.rating__item {
+  width: 50px;
+  padding: 12px 0;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  color: hsl(216deg, 12%, 54%);
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 50%;
+}
+.rating__item:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
+.rating__item--active {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 54%);
+}
+
+.button {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.button--submit {
+  width: 100%;
+  color: hsl(0deg, 0%, 100%);
+  padding: 8px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: 400;
+  border-radius: 20px;
+  background-color: hsl(25deg, 97%, 53%);
+}
+.button--submit:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */
